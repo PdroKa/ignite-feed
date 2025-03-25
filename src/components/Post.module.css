@@ -10,22 +10,15 @@
 
 .post>header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
 .author {
-    display: fkex;
+    display: flex;
+    flex-direction: rown;
     align-items: center;
     gap: 1rem;
-}
-
-.author img {
-    width: calc(3rem + 12px);
-    height: calc(3rem + 12px);
-    border-radius: 8px;
-    border: 4px solid var(--gray-800);
-    outline: 2px solid var(--green-500);
 }
 
 .authorInfo strong {
@@ -120,4 +113,8 @@ basicamente, se ouver um foco em qualquer input ou textarea dentro do ComentForm
 
 .commentForm button[type=submit]:hover {
     background-color: var(--green-300);
+}
+
+.commentList {
+    margin-top: 2rem;
 }
